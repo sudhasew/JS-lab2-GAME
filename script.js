@@ -57,3 +57,43 @@ function fight(player1, player2, player1Health, player2Health) {
 }
 
 fight("Mitch Cuckovich", "Adam Hire", 100, 100);
+
+// Extended Challenges
+
+function getGrade(number) {
+  if (number > 90) {
+    grade = "A";
+    return grade;
+  } else if (number > 80 && number <= 90) {
+    grade = "B";
+    return grade;
+  } else if (number > 70 && number <= 80) {
+    grade = "C";
+    return grade;
+  } else if (number > 60 && number <= 70) {
+    grade = "D";
+    return grade;
+  } else if (number > 50 && number <= 60) {
+    grade = "F";
+    return grade;
+  }
+}
+console.log(getGrade(60));
+
+function prioritize(urgent, important) {
+  if (urgent && important) {
+    priority = 1;
+    return priority;
+  } else if (important) {
+    priority = 2;
+    return priority;
+  } else if (urgent) {
+    priority = 3;
+    return priority;
+  } else {
+    priority = 4;
+    return priority;
+  }
+}
+
+console.log(prioritize(false, false));
